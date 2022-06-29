@@ -23,7 +23,8 @@ ResultSet rs = null;
         <title>BACHILLERATOS</title>
     </head>
     <body>
-        <table border="1" width="600">
+        <h1 class="titulo" align="center">LISTADO DE BACHILERATOS</h1>
+        <table border="1" width="600" align="center">
             <tr bfcolor="skyblue">
                 <td>id bachillerato</td>
                 <td>nombre</td>
