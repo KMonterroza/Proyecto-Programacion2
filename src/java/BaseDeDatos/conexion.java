@@ -5,15 +5,17 @@
  */
 
 package BaseDeDatos;
-import java.sql.Connection;
-import java.sql.DriverManager;
+import java.sql.*;
 import javax.swing.JOptionPane;
 public class conexion {
    Connection conectar = null;
+   Statement sta=null;
      public Connection conexion(){
+
          try{
              Class.forName("com.mysql.jdbc.Driver");
              conectar = DriverManager.getConnection("jdbc:mysql://localhost:3306/gestionestudiante","root","");
+             sta=conectar.createStatement();
              System.out.println("Conexion aceptada..");
          }catch (Exception e){
              System.out.println("Mensaje de error"+e);
