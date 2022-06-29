@@ -21,7 +21,6 @@ public class conexion {
          }
         return conectar;
      }
-
    public static void main(String[] args){
       conexion c = new conexion();
       c.conexion();
