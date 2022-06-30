@@ -19,9 +19,10 @@ ResultSet rs = null;
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>JSP Page</title>
     </head>
-    <body>
+    <body >
        
         <h2 class="lines-effects"> LISTADO DE ESTUDIANTES</h2>
+        
         <table  align="center">
             <thead>
             <tr>

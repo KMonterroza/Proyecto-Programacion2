@@ -3,6 +3,10 @@
     padding: 0;
     font-family: lato;
 }
+.button{
+    font-size: 50px;
+   
+}
 body{
     background-color: #fafbed;
 }.titulo {
@@ -62,16 +66,6 @@ body{
         text-align: center;
         position: center;
 }
-input{
-    font-weight: bold;
-    cursor: pointer;
-  
-    padding: 20px;
-    margin: 0 10px 20px 0;
-    border: 1px solid #ccc;
-    background: #eee;
-    border-radius: 8px 8px 8px 8px;
-}
-input:hover {
-    background: #ddd;
+.containerform a{
+    text-decoration: none;
 }

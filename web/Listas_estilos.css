@@ -9,6 +9,8 @@ and open the template in the editor.
 */
 body{
     text-align: center;
+    background-color: #ffffeb;
+         
 }
 h2{
     display: inline-block;
@@ -16,7 +18,7 @@ h2{
     text-align: center;
     justify-content: center;
     color:#24303c;
-    
+    text-align: center;
 font-family: 'Arima', cursive;
     
 }
