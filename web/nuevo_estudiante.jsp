@@ -6,7 +6,7 @@
 
 <%@page import="java.sql.*"%>
 <%@page import="BaseDeDatos.conexion"%>
-
+<link rel="stylesheet" href="NuevoEstu_estilos.css" type="text/css"/>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -15,40 +15,40 @@
         <title>JSP Page</title>
     </head>
     <body>
-        <h2 alig="center"> Registrar un nuevo estudiante </h2>
+        <h2 class=" lines-effects" > Registrar un nuevo estudiante </h2>
         <form action="" alig="center">
-            <table border="1" width="450" align="center">
+            <table class="resgistro" border="1" width="450" align="center">
                 
-                <tr bgcolor="skyblue">
+                <tr >
                     <td>Nombre:</td>
-                    <td><input type="text" name="txtNombre"></td>
+                    <td><input class="controles" type="text" name="txtNombre"></td>
                 </tr>
-                <tr bgcolor="skyblue">
+                <tr >
                     <td>Apellido:</td>
-                    <td><input type="text" name="txtApelli"></td>
+                    <td><input class="controles" type="text" name="txtApelli"></td>
                 </tr>
-                <tr bgcolor="skyblue">
+                <tr >
                     <td>Fecha de nacimiento:</td>
-                    <td><input type="text" name="txtNaci"></td>
-                </tr bgcolor="skyblue">
-                <tr  bgcolor="skyblue">
+                    <td><input class="controles" type="text" name="txtNaci"></td>
+                </tr >
+                <tr>
                     <td>Sexo:</td>
-                    <td><input type="text" name="txtSexo"></td>
+                    <td><input class="controles" type="text" name="txtSexo"></td>
                 </tr>
-                <tr bgcolor="skyblue">
+                <tr >
                     <td>Telefono:</td>
-                    <td><input type="text" name="txtTele"></td>
-                <tr bgcolor="skyblue">
+                    <td><input  class="controles" type="text" name="txtTele"></td>
+                <tr >
                     <td>Email:</td>
-                    <td><input type="text" name="txtEmail"></td>
+                    <td><input class="controles" type="text" name="txtEmail"></td>
                 </tr>
-                <tr bgcolor="skyblue">
+                <tr >
                      <td>Codigo bachillerato:</td>
-                    <td><input type="text" name="txtFkbachi"></td>
+                    <td><input class="controles" type="text" name="txtFkbachi"></td>
                 </tr>
                    
                     <td colspan="3">
-                        <input  type="submit" name="btnAgregar" value="Agregar usuario "></td>
+                        <input class="botons" type="submit" name="btnAgregar" value="Agregar usuario "></td>
                 
                 
                

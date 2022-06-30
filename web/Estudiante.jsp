@@ -12,7 +12,7 @@ Connection cnx = null;
 Statement sta = null;
 ResultSet rs = null;
 %>
-
+<link rel="stylesheet" href="Listas_estilos.css" type="text/css"/>
 <!DOCTYPE html>
 <html>
     <head>
@@ -21,13 +21,16 @@ ResultSet rs = null;
     </head>
     <body>
         <h1 align="center"> LISTADO DE ESTUDIANTES</h1>
-        <table border="1" width="1000" align="center">
-            <tr bgcolor="skyblue" >
-                <th colspan="8"> Agregar un nuevo REGISTRO ------------></th>
+        <table  align="center">
+            <thead>
+            <tr>
+                <th colspan="8" bgcolor="#515151"> Agregar un nuevo REGISTRO ------------></th>
                 
-                <th> <a href="nuevo_estudiante.jsp"><img src="agregar.png" width="30" height="30"> </th> </a>
+                <th bgcolor="#515151"> <a href="nuevo_estudiante.jsp"><img src="agregar.png" width="30" height="30"> </th> </a>
             </tr>
-            <tr bgcolor="skyblue">
+            
+            <tr >
+                
                 <td>Codigo de Estudiante</td>
                 <td>Nombre</td>
                 <td>Apellido</td>
@@ -38,7 +41,7 @@ ResultSet rs = null;
                 <td>Codigo del bachilerato</td>
                  <td> Eliminar</td>
             </tr>
-            
+            </thead>
             <% 
            
             try{
@@ -50,7 +53,7 @@ ResultSet rs = null;
                 
                  while (rs.next()) {                              
                               %>
-                              <tr>
+                              <tr class="encabezado">
                                   <td><%=rs.getInt(1) %></td> <!<!-- la version anterior no funcionaba porque en lugar de td puse th -->
                                    <td><%=rs.getString(2) %></td>
                                    <td><%=rs.getString(3) %></td>
