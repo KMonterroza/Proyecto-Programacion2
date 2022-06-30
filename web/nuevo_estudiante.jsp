@@ -48,7 +48,7 @@
                 </tr>
                    
                     <td colspan="3">
-                        <input class="botons" type="submit" name="btnAgregar" value="Agregar usuario "></td>
+                        <input class="botons" type="submit" name="btnAgregar" value="Agregar estudiante "></td>
                 
                 
                

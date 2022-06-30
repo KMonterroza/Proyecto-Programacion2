@@ -7,7 +7,39 @@ and open the template in the editor.
     Created on : 30 jun. 2022, 12:32:42
     Author     : Sammy Guergachi <sguergachi at gmail.com>
 */
-
+body{
+    text-align: center;
+}
+h2{
+    display: inline-block;
+    position:relative;
+    text-align: center;
+    justify-content: center;
+    color:#24303c;
+    
+font-family: 'Arima', cursive;
+    
+}
+h2::after,h2::before{
+    content: '';
+    position:absolute;
+    width: 120px;
+    height: 3px;
+    background-color: currentColor;
+    top:0.6em;
+    transform: scale(0);
+    transition: all 0.2s ease-in;
+      
+}
+h2:hover::before, h2:hover::after{
+    transform: scale(1);
+}
+h2::before{
+    left:-140px;
+}
+h2::after{
+    right: -140px;
+}
 table{
     background-color: white;
     text-align: left;

@@ -20,7 +20,8 @@ ResultSet rs = null;
         <title>JSP Page</title>
     </head>
     <body>
-        <h1 align="center"> LISTADO DE ESTUDIANTES</h1>
+       
+        <h2 class="lines-effects"> LISTADO DE ESTUDIANTES</h2>
         <table  align="center">
             <thead>
             <tr>
