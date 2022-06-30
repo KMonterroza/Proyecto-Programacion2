@@ -9,14 +9,14 @@ and open the template in the editor.
 */
 body{
     text-align: center;
-    
+    background-image: url('fondo1.jpg')
 }
 h2{
     display: inline-block;
     position:relative;
     text-align: center;
     justify-content: center;
-    color:#24303c;
+    color:white;
     
 font-family: 'Arima', cursive;
     
@@ -68,4 +68,8 @@ h2::after{
     color: white;
     margin: 16 px 0px;
     font-size:16px;
+}
+.volverEs{
+    text-decoration: none;
+   color:white;
 }

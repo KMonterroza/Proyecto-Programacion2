@@ -48,13 +48,10 @@
                 </tr>
                    
                     <td colspan="3">
-                        <input class="botons" type="submit" name="btnAgregar" value="Agregar estudiante "></td>
-                
-                
-               
+                        <input class="botons" type="submit" name="btnAgregar" value="Agregar estudiante "></td>            
             </table>
         </form>
-        
+        <a href="Estudiante.jsp" class="volverEs">Volver atras</a>
     </body>
 </html>
 
