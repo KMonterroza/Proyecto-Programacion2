@@ -4,7 +4,6 @@
     Author     : ISAAC
 --%>
 <%@page import="java.sql.*"%>
-<%@page import="BaseDeDatos.conexion"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <% 
 try {
@@ -20,15 +19,18 @@ ResultSet rs = null;
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>BACHILLERATOS</title>
+        <title>LISTADO DE BACHILLERATOS</title>
     </head>
     <body>
         <h1 class="titulo" align="center">LISTADO DE BACHILERATOS</h1>
+        <a href="index.html" name="btnInicioB">Volver a inicio</a>
+        <h3 align="center"> Añadir Bachillerato <a href="nuevobachi.jsp"><img src="icons/añadir.png" width="30" align="center"/></a></h3>
         <table border="1" width="600" align="center">
             <tr bfcolor="skyblue">
                 <td>id bachillerato</td>
                 <td>nombre</td>
-                <td>descrpcion</td>
+                <td>descripcion</td>
+                <<td>Eliminar</td>
             </tr>
             <%
               try {
@@ -41,6 +43,11 @@ ResultSet rs = null;
                                   <td><%=rs.getString(1) %></td> <!<!-- la version anterior no funcionaba porque en lugar de td puse th -->
                                    <td><%=rs.getString(2) %></td>
                                    <td><%=rs.getString(3) %></td>
+                                   <td align="center">
+                                       <a href="eliminarBachi.jsp?id=<%=rs.getString(1)%>">
+                                       <img src="icons/eliminar.png" width="30" align="center"/>
+                                       </a>
+                                   </td>
                               </tr>
                               <%
                           }
