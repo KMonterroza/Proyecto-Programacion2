@@ -1,0 +1,169 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 29 jun. 2022, 18:52:15
+    Author     : GVides30
+*/
+
+  
+    h1{
+    display: inline-block;
+    position: relative;
+    color:white;
+    font-family: lato;
+    
+}
+    
+    h1::after,h1::before {
+        
+        content: '';
+        position:absolute;
+        width: 120px;
+        height: 3px;
+        background-color:currentColor;
+        top: 0.4cm;
+        transform: scale(0);
+        transition: all 0.2s ease-in;
+    }
+
+    h1:hover::before,h1:hover::after{
+        transform: scale(1);
+    }
+    h1::before{
+        left: -140px;
+    }
+    
+    h1::after{
+        right: -140px;
+    }
+    
+
+
+body{
+    background: url(grupo.jpg);
+    background-size: cover;
+    font-family: lato;
+    text-align: center;
+  
+
+}
+
+body::before{
+    content:"";
+    width: 100%;
+    min-height: 100vh;
+    position:absolute;
+    top:0;
+    left:0;
+    background: linear-gradient(65deg,black,#6633ff);
+    opacity: 0.5;
+    z-index: -1;
+}
+button{
+    position: relative;
+    padding: 10px 15px;
+    border: none;
+    outline: none;
+    background: #0099ff;
+    cursor: pointer;
+    transition: 0.5s;
+    overflow: hidden;
+}
+
+button:hover{
+    color: white;
+    
+}
+
+button span{
+    position: absolute;
+    background: white;
+    transition: 0.5s;
+    
+}
+
+button span:nth-child(1){
+    width: 100%;
+    height: 1px;
+    top: 0;
+    left: -100%;
+}
+
+button span:nth-child(2){
+    width: 100%;
+    height: 1px;
+    bottom: 0;
+    right: -100%;
+}
+
+button span:nth-child(3){
+    width: 1px;
+    height: 100%;
+    bottom:  -100%;
+    left: 0;
+}
+
+button span:nth-child(4){
+    width: 1px;
+    height: 100%;
+    top:   -100%;
+    right: 0;
+}
+
+button:hover span:nth-child(1){
+    left: 0;
+}
+
+button:hover span:nth-child(2){
+    right:  0;
+}
+
+button:hover span:nth-child(3){
+    bottom:  0;
+}
+
+button:hover span:nth-child(4){
+    top: 0;
+}
+
+#main-contanier{
+    margin: 150px auto;
+    width: 600px;
+}
+table{
+    background-color: white;
+    text-align: center;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th,td{
+    padding: 2%;
+}
+thead{
+    background-color: #246355;
+    border-bottom: solid 5px #000000;
+    color: white;
+}
+
+tr:nth-child(even){
+    background-color: #ddd;
+}
+
+.btn{
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 1px;
+    background-color: transparent;
+    padding: 10px 25px;
+    color:white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.encabezado:hover{
+ background-color: #369681;
+ color:white;
+}
