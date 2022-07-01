@@ -5,6 +5,7 @@
 --%>
 
 <%@page import="java.sql.*"%>
+<link rel="stylesheet" href="NuevoEstu_estilos.css" type="text/css"/>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -13,23 +14,25 @@
         <title>AÑADIR BACHILLERATO</title>
     </head>
     <body>
-        <h1 align="center">Registro de Bachillerato</h1>
-        <a href="Bachillerato.jsp">Cancelar</a> <!<!-- vuelve al listado -->
+        <h2 class=" lines-effects">Registro de Bachillerato</h2>
+        
         <form action="">
-            <table border="1" width="400" align="center">  
+            <table class="resgistro" border="1" width="400" align="center">  
                 <tr>
                     <td>Ingrese el Nombre</td>
-                    <td><input type="text" name="txtNombre" placeholder="Ingrese el nombre"></td>
+                    <td><input  class="controles" type="text" name="txtNombre" placeholder="Ingrese el nombre"></td>
                 </tr>
                 <tr>
                     <td>Ingrese una breve descripcion</td>
-                    <td><input type="text" name="txtDescripcion" placeholder="Ingrese la descripcion"></td>
+                    <td><input  class="controles" type="text" name="txtDescripcion" placeholder="Ingrese la descripcion"></td>
                 </tr>  
                 <tr>
-                    <th colspan="2"><input type="submit" name="btnAñadirB" value="Añadir Bachillerato"></th>
+                    <th colspan="2"><input class="botons" type="submit" name="btnAñadirB" value="Añadir Bachillerato"></th>
                 </tr> 
             </table>   
         </form>
+         <a href="Bachillerato.jsp" class="volverEs">Volver atras</a>
+
     </body>
 </html>
 <%
